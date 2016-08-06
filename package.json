@@ -1,0 +1,38 @@
+{
+  "name": "grunt-remark",
+  "version": "1.0.0",
+  "description": "Processes markdown with remakr",
+  "scripts": {
+    "test": "eslint . && remark *.md -u remark-lint -q --no-stdout"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianMurphy/grunt-remark.git"
+  },
+  "keywords": [
+    "gruntplugin",
+    "remark",
+    "markdown"
+  ],
+  "author": {
+    "name": "Christian Murphy",
+    "email": "Christian.Murphy.42@gmail.com",
+    "url": "https://github.com/ChristianMurphy"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChristianMurphy/grunt-remark/issues"
+  },
+  "homepage": "https://github.com/ChristianMurphy/grunt-remark#readme",
+  "dependencies": {
+    "remark": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.2.2",
+    "eslint-config-google": "^0.6.0",
+    "remark-lint": "^4.1.0"
+  },
+  "peerDependencies": {
+    "grunt": ">= 0.4.0"
+  }
+}
