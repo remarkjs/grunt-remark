@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Processes markdown with remakr",
   "scripts": {
-    "test": "eslint . && remark *.md -u remark-lint -q --no-stdout"
+    "test": "grunt && eslint . && remark *.md -u remark-lint -q --no-stdout"
   },
   "repository": {
     "type": "git",
@@ -25,11 +25,15 @@
   },
   "homepage": "https://github.com/ChristianMurphy/grunt-remark#readme",
   "dependencies": {
-    "remark": "^5.0.1"
+    "remark": "^5.0.1",
+    "unified-engine": "^1.5.1"
   },
   "devDependencies": {
     "eslint": "^3.2.2",
     "eslint-config-google": "^0.6.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "remark-cli": "^1.0.0",
     "remark-lint": "^4.1.0"
   },
   "peerDependencies": {

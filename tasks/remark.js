@@ -1,40 +1,26 @@
 'use strict';
 
-module.exports = function(grunt) {
-  // Please see the Grunt documentation for more information regarding task
-  // creation: http://gruntjs.com/creating-tasks
+var remark = require('remark');
+var engine = require('unified-engine');
 
+module.exports = function(grunt) {
   grunt.registerMultiTask('remark', 'Process markdown with remark', function() {
-    // Merge task-specific and/or target-specific options with these defaults.
+    var done = this.async();
+    var globs = this.filesSrc;
     var options = this.options({
-      punctuation: '.',
-      separator: ', '
+      processor: remark,
+      globs: globs,
+      extensions: ['md', 'markdown', 'mkd', 'mkdn', 'mkdown'],
+      pluginPrefix: 'remark',
+      rcName: '.remarkrc',
+      packageField: 'remarkConfig',
+      ignoreName: '.remarkignore',
+      color: true
     });
 
-    // Iterate over all specified file groups.
-    this.files.forEach(function(f) {
-      // Concat specified files.
-      var src = f.src.filter(function(filepath) {
-        // Warn on and remove invalid source files (if nonull was set).
-        if (!grunt.file.exists(filepath)) {
-          grunt.log.warn('Source file "' + filepath + '" not found.');
-          return false;
-        } else {
-          return true;
-        }
-      }).map(function(filepath) {
-        // Read file source.
-        return grunt.file.read(filepath);
-      }).join(grunt.util.normalizelf(options.separator));
-
-      // Handle options.
-      src += options.punctuation;
-
-      // Write the destination file.
-      grunt.file.write(f.dest, src);
-
-      // Print a success message.
-      grunt.log.writeln('File "' + f.dest + '" created.');
+    engine(options, function(err) {
+      if (err) grunt.fail.warn(err);
+      done();
     });
   });
 };
