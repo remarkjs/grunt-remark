@@ -1,4 +1,4 @@
-# grunt-remark
+# grunt-remark [![Build Status](https://travis-ci.org/ChristianMurphy/grunt-remark.svg?branch=master)](https://travis-ci.org/ChristianMurphy/grunt-remark)
 
 > Process markdown with [remark](http://remark.js.org/)
 
@@ -8,8 +8,8 @@
 'use strict';
 
 module.exports = grunt => {
-  grunt.loadTasks('tasks');
   grunt.loadNpmTasks('grunt-remark');
+  grunt.loadTasks('tasks');
   grunt.initConfig({
     remark: {
       src: ['*.md']
