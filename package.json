@@ -1,10 +1,13 @@
 {
   "name": "grunt-remark",
-  "version": "1.0.0",
-  "description": "Processes markdown with remakr",
+  "version": "0.1.0",
+  "description": "Processes markdown with remark",
   "scripts": {
     "test": "grunt && eslint . && remark *.md -u remark-lint -q --no-stdout"
   },
+  "files": [
+    "tasks"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ChristianMurphy/grunt-remark.git"
