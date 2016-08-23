@@ -1,0 +1,3 @@
+presets:
+  - remark-preset-lint-recommended
+  - remark-preset-lint-consistent
