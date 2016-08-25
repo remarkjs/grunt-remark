@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Processes markdown with remark",
   "scripts": {
-    "test": "grunt && eslint . && remark *.md -u remark-lint -q --no-stdout"
+    "test": "grunt && eslint . && remark *.md -q --no-stdout"
   },
   "files": [
     "tasks"
@@ -37,7 +37,6 @@
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
     "remark-cli": "^2.0.0",
-    "remark-lint": "^5.0.0",
     "remark-preset-lint-consistent": "^1.0.0",
     "remark-preset-lint-recommended": "^1.0.0"
   },
