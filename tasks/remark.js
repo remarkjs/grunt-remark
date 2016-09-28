@@ -12,6 +12,7 @@ module.exports = function(grunt) {
       globs: globs,
       extensions: ['md', 'markdown', 'mkd', 'mkdn', 'mkdown'],
       pluginPrefix: 'remark',
+      presetPrefix: 'remark-preset',
       rcName: '.remarkrc',
       packageField: 'remarkConfig',
       ignoreName: '.remarkignore',
