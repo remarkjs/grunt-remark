@@ -19,8 +19,8 @@ module.exports = function(grunt) {
       color: true
     });
 
-    engine(options, function(err) {
-      if (err) grunt.fail.warn(err);
+    engine(options, function(err, status) {
+      if (err || status) grunt.fail.warn(err || 'Unsuccessful running');
       done();
     });
   });
