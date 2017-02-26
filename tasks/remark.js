@@ -6,13 +6,12 @@ var engine = require('unified-engine');
 module.exports = function(grunt) {
   grunt.registerMultiTask('remark', 'Process markdown with remark', function() {
     var done = this.async();
-    var globs = this.filesSrc;
+    var files = this.filesSrc;
     var options = this.options({
       processor: remark,
-      globs: globs,
+      files: files,
       extensions: ['md', 'markdown', 'mkd', 'mkdn', 'mkdown'],
       pluginPrefix: 'remark',
-      presetPrefix: 'remark-preset',
       rcName: '.remarkrc',
       packageField: 'remarkConfig',
       ignoreName: '.remarkignore',
