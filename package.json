@@ -32,8 +32,8 @@
     "unified-engine": "^3.0.2"
   },
   "devDependencies": {
-    "eslint": "^3.16.1",
-    "eslint-config-google": "^0.6.0",
+    "eslint": "^4.1.1",
+    "eslint-config-google": "^0.8.0",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
     "remark-cli": "^3.0.0",

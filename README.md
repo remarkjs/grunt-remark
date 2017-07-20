@@ -1,5 +1,7 @@
 # grunt-remark
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ChristianMurphy/grunt-remark.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/ChristianMurphy/grunt-remark.svg?branch=master)](https://travis-ci.org/ChristianMurphy/grunt-remark)
 [![dependencies Status](https://david-dm.org/ChristianMurphy/grunt-remark/status.svg)](https://david-dm.org/ChristianMurphy/grunt-remark)
 [![devDependencies Status](https://david-dm.org/ChristianMurphy/grunt-remark/dev-status.svg)](https://david-dm.org/ChristianMurphy/grunt-remark?type=dev)
