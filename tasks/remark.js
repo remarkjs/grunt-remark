@@ -1,13 +1,13 @@
 'use strict';
 
-var remark = require('remark');
-var engine = require('unified-engine');
+const remark = require('remark');
+const engine = require('unified-engine');
 
-module.exports = function(grunt) {
+module.exports = (grunt) => {
   grunt.registerMultiTask('remark', 'Process markdown with remark', function() {
-    var done = this.async();
-    var files = this.filesSrc;
-    var options = this.options({
+    const done = this.async();
+    const files = this.filesSrc;
+    const options = this.options({
       processor: remark,
       files: files,
       extensions: ['md', 'markdown', 'mkd', 'mkdn', 'mkdown'],
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       rcName: '.remarkrc',
       packageField: 'remarkConfig',
       ignoreName: '.remarkignore',
-      color: true
+      color: true,
     });
 
     engine(options, function(err, status) {

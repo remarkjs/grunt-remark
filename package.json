@@ -28,15 +28,15 @@
   },
   "homepage": "https://github.com/ChristianMurphy/grunt-remark#readme",
   "dependencies": {
-    "remark": "^7.0.0",
-    "unified-engine": "^3.0.2"
+    "remark": "^8.0.0",
+    "unified-engine": "^4.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.1.1",
-    "eslint-config-google": "^0.8.0",
+    "eslint": "~4.3.0",
+    "eslint-config-google": "^0.9.1",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
-    "remark-cli": "^3.0.0",
+    "remark-cli": "^4.0.0",
     "remark-preset-lint-consistent": "^2.0.0",
     "remark-preset-lint-recommended": "^2.0.0"
   },
@@ -44,12 +44,23 @@
     "grunt": ">= 0.4.0"
   },
   "eslintConfig": {
-    "extends": "google"
+    "root": true,
+    "extends": "google",
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "rules": {
+      "no-invalid-this": "off"
+    }
   },
   "remarkConfig": {
     "plugins": [
       "preset-lint-recommended",
       "preset-lint-consistent"
     ]
+  },
+  "engines": {
+    "node": ">=4.0.0"
   }
 }
