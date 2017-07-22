@@ -1,11 +1,11 @@
 'use strict';
 
-module.exports = grunt => {
+module.exports = (grunt) => {
   grunt.loadTasks('tasks');
   grunt.initConfig({
     remark: {
-      src: ['*.md']
-    }
+      src: ['*.md'],
+    },
   });
   grunt.registerTask('default', ['remark']);
 };
