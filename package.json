@@ -3,7 +3,9 @@
   "version": "4.0.0",
   "description": "Processes markdown with remark",
   "scripts": {
-    "test": "grunt && eslint . && remark *.md -q --no-stdout"
+    "test": "grunt && eslint . && remark *.md -q --no-stdout",
+    "precommit": "npm test",
+    "commitmsg": "commitlint -e"
   },
   "files": [
     "tasks"
@@ -32,10 +34,13 @@
     "unified-engine": "^4.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^3.0.4",
+    "@commitlint/config-angular": "^3.0.4",
     "eslint": "~4.4.0",
     "eslint-config-google": "^0.9.1",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
+    "husky": "^0.14.3",
     "remark-cli": "^4.0.0",
     "remark-preset-lint-consistent": "^2.0.0",
     "remark-preset-lint-recommended": "^3.0.0"
