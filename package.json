@@ -1,9 +1,10 @@
 {
   "name": "grunt-remark",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Processes markdown with remark",
   "scripts": {
     "test": "grunt && eslint . && remark *.md -q --no-stdout",
+    "cz": "git-cz",
     "precommit": "npm test",
     "commitmsg": "commitlint -e"
   },
@@ -36,6 +37,8 @@
   "devDependencies": {
     "@commitlint/cli": "^3.0.4",
     "@commitlint/config-angular": "^3.0.4",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
     "eslint": "~4.4.0",
     "eslint-config-google": "^0.9.1",
     "grunt": "^1.0.1",
@@ -67,6 +70,11 @@
       "preset-lint-recommended",
       "preset-lint-consistent"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "engines": {
     "node": ">=4.0.0"
