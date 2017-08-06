@@ -1,7 +1,7 @@
 # grunt-remark
 
 <!-- current project status -->
-[![npm](https://img.shields.io/npm/v/grunt-remark.svg)]()
+[![npm](https://img.shields.io/npm/v/grunt-remark.svg)](https://www.npmjs.com/package/grunt-remark)
 [![Linux Build Status](https://travis-ci.org/ChristianMurphy/grunt-remark.svg?branch=master)](https://travis-ci.org/ChristianMurphy/grunt-remark)
 [![Windows Build status](https://ci.appveyor.com/api/projects/status/dixo63g7304vuuin/branch/master?svg=true)](https://ci.appveyor.com/project/ChristianMurphy/grunt-remark/branch/master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/ChristianMurphy/grunt-remark.svg)](https://greenkeeper.io/)
