@@ -1,0 +1,13 @@
+init:
+  - git config --global core.autocrlf true
+
+install:
+  - ps: Install-Product node 8
+  - npm install
+
+test_script:
+  - node --version
+  - npm --version
+  - npm test
+
+build: off
