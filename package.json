@@ -39,7 +39,7 @@
     "@commitlint/config-angular": "^3.0.4",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
-    "eslint": "~4.4.0",
+    "eslint": "~4.5.0",
     "eslint-config-google": "^0.9.1",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
