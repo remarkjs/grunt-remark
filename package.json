@@ -35,7 +35,7 @@
     "unified-engine": "^4.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^3.0.4",
+    "@commitlint/cli": "^4.0.0",
     "@commitlint/config-angular": "^3.0.4",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
