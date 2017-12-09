@@ -1,6 +1,6 @@
 {
   "name": "grunt-remark",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Processes markdown with remark",
   "scripts": {
     "test": "grunt && eslint . && remark *.md -q --no-stdout",
