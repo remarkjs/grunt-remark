@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChristianMurphy/grunt-remark.git"
+    "url": "git+https://github.com/remarkjs/grunt-remark.git"
   },
   "keywords": [
     "gruntplugin",
@@ -27,9 +27,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ChristianMurphy/grunt-remark/issues"
+    "url": "https://github.com/remarkjs/grunt-remark/issues"
   },
-  "homepage": "https://github.com/ChristianMurphy/grunt-remark#readme",
+  "homepage": "https://github.com/remarkjs/grunt-remark#readme",
   "dependencies": {
     "remark": "^8.0.0",
     "unified-engine": "^5.0.0"

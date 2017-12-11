@@ -3,11 +3,11 @@
 <!-- current project status -->
 
 [![npm](https://img.shields.io/npm/v/grunt-remark.svg)](https://www.npmjs.com/package/grunt-remark)
-[![Linux Build Status](https://travis-ci.org/ChristianMurphy/grunt-remark.svg?branch=master)](https://travis-ci.org/ChristianMurphy/grunt-remark)
+[![Linux Build Status](https://travis-ci.org/remarkjs/grunt-remark.svg?branch=master)](https://travis-ci.org/remarkjs/grunt-remark)
 [![Windows Build status](https://ci.appveyor.com/api/projects/status/dixo63g7304vuuin/branch/master?svg=true)](https://ci.appveyor.com/project/ChristianMurphy/grunt-remark/branch/master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/ChristianMurphy/grunt-remark.svg)](https://greenkeeper.io/)
-[![dependencies Status](https://david-dm.org/ChristianMurphy/grunt-remark/status.svg)](https://david-dm.org/ChristianMurphy/grunt-remark)
-[![devDependencies Status](https://david-dm.org/ChristianMurphy/grunt-remark/dev-status.svg)](https://david-dm.org/ChristianMurphy/grunt-remark?type=dev)
+[![Greenkeeper badge](https://badges.greenkeeper.io/remarkjs/grunt-remark.svg)](https://greenkeeper.io/)
+[![dependencies Status](https://david-dm.org/remarkjs/grunt-remark/status.svg)](https://david-dm.org/remarkjs/grunt-remark)
+[![devDependencies Status](https://david-dm.org/remarkjs/grunt-remark/dev-status.svg)](https://david-dm.org/remarkjs/grunt-remark?type=dev)
 
 <!-- standards and technologies used in project -->
 
