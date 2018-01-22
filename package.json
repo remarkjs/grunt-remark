@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/remarkjs/grunt-remark#readme",
   "dependencies": {
-    "remark": "^8.0.0",
+    "remark": "^9.0.0",
     "unified-engine": "^5.0.0"
   },
   "devDependencies": {
@@ -43,7 +43,7 @@
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
     "husky": "^0.14.3",
-    "remark-cli": "^4.0.0",
+    "remark-cli": "^5.0.0",
     "remark-preset-lint-consistent": "^2.0.0",
     "remark-preset-lint-recommended": "^3.0.0"
   },
