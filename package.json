@@ -32,7 +32,7 @@
   "homepage": "https://github.com/remarkjs/grunt-remark#readme",
   "dependencies": {
     "remark": "^9.0.0",
-    "unified-engine": "^5.0.0"
+    "unified-engine": "^6.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
