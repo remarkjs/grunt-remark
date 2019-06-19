@@ -5,6 +5,9 @@ module.exports = (grunt) => {
   grunt.initConfig({
     remark: {
       src: ['*.md'],
+      options: {
+        output: true,
+      },
     },
   });
   grunt.registerTask('default', ['remark']);
