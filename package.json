@@ -1,6 +1,6 @@
 {
   "name": "grunt-remark",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "description": "Grunt task for remark",
   "license": "MIT",
   "keywords": [
