@@ -36,39 +36,37 @@
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "@commitlint/prompt-cli": "^8.0.0",
-    "eslint": "^5.0.0",
-    "eslint-config-google": "^0.13.0",
     "grunt": "^1.0.0",
     "grunt-cli": "^1.0.0",
     "husky": "^2.0.0",
+    "prettier": "^1.0.0",
     "remark-cli": "^6.0.0",
-    "remark-preset-lint-consistent": "^2.0.0",
-    "remark-preset-lint-recommended": "^3.0.0"
+    "remark-preset-wooorm": "^5.0.0",
+    "xo": "^0.24.0"
   },
   "scripts": {
-    "test": "grunt && eslint . && remark . -qfo",
+    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
     "precommit": "npm test",
     "commitmsg": "commitlint -e",
-    "commit": "commit"
+    "commit": "commit",
+    "test-api": "grunt",
+    "test": "npm run format && npm run test-api"
   },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "eslint:recommended",
-      "google"
-    ],
-    "env": {
-      "node": true,
-      "es6": true
-    },
-    "rules": {
-      "no-invalid-this": "off"
-    }
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
+  },
+  "xo": {
+    "prettier": true,
+    "esnext": false
   },
   "remarkConfig": {
     "plugins": [
-      "preset-lint-recommended",
-      "preset-lint-consistent"
+      "preset-wooorm"
     ]
   },
   "commitlint": {

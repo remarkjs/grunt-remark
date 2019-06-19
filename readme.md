@@ -19,18 +19,18 @@ npm install --save-dev grunt-remark
 ## Use
 
 ```js
-'use strict';
+'use strict'
 
 module.exports = grunt => {
-  grunt.loadNpmTasks('grunt-remark');
-  grunt.loadTasks('tasks');
+  grunt.loadNpmTasks('grunt-remark')
+  grunt.loadTasks('tasks')
   grunt.initConfig({
     remark: {
       src: ['*.md']
     }
-  });
-  grunt.registerTask('default', ['remark']);
-};
+  })
+  grunt.registerTask('default', ['remark'])
+}
 ```
 
 ## Options
