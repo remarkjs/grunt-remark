@@ -46,8 +46,6 @@
   },
   "scripts": {
     "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
-    "precommit": "npm test",
-    "commitmsg": "commitlint -e",
     "commit": "commit",
     "test-api": "grunt",
     "test": "npm run format && npm run test-api"
@@ -84,5 +82,11 @@
       ":ignoreUnstable",
       ":renovatePrefix"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e",
+      "pre-commit": "npm test"
+    }
   }
 }
