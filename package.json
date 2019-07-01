@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "remark": "^10.0.0",
-    "unified-engine": "^6.0.0"
+    "unified-engine": "^7.0.0"
   },
   "peerDependencies": {
     "grunt": ">= 0.4.0"
