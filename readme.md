@@ -37,6 +37,12 @@ module.exports = grunt => {
 
 See full list of options at [`unified-engine`][options].
 
+## Security
+
+Use of [**remark**][remark] and its plugins could open you up to
+[cross-site scripting (XSS)][xss] or other attacks.
+Carefully assess each plugin and the risks involved in using them.
+
 ## Contribute
 
 See [`contributing.md`][contributing] in [`remarkjs/.github`][health] for ways
@@ -88,3 +94,5 @@ abide by its terms.
 [grunt]: https://gruntjs.com
 
 [options]: https://github.com/unifiedjs/unified-engine#options
+
+[xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
