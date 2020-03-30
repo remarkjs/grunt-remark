@@ -23,7 +23,7 @@
     "tasks"
   ],
   "dependencies": {
-    "remark": "^11.0.0",
+    "remark": "^12.0.0",
     "unified-engine": "^7.0.0"
   },
   "peerDependencies": {
