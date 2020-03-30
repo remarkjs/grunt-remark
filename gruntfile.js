@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = grunt => {
+module.exports = (grunt) => {
   grunt.loadTasks('tasks')
   grunt.initConfig({
     remark: {

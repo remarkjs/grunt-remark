@@ -38,11 +38,11 @@
     "@commitlint/prompt-cli": "^8.0.0",
     "grunt": "^1.0.0",
     "grunt-cli": "^1.0.0",
-    "husky": "^3.0.0",
-    "prettier": "^1.0.0",
-    "remark-cli": "^7.0.0",
+    "husky": "^4.0.0",
+    "prettier": "^2.0.0",
+    "remark-cli": "^8.0.0",
     "remark-preset-wooorm": "^6.0.0",
-    "xo": "^0.24.0"
+    "xo": "^0.28.0"
   },
   "scripts": {
     "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
