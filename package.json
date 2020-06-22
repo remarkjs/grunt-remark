@@ -27,25 +27,25 @@
     "unified-engine": "^8.0.0"
   },
   "peerDependencies": {
-    "grunt": ">= 0.4.0"
+    "grunt": ">=0.4.0"
   },
   "engines": {
     "node": ">=6.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.0.0",
-    "@commitlint/config-conventional": "^8.0.0",
-    "@commitlint/prompt-cli": "^8.0.0",
+    "@commitlint/cli": "^9.0.0",
+    "@commitlint/config-conventional": "^9.0.0",
+    "@commitlint/prompt-cli": "^9.0.0",
     "grunt": "^1.0.0",
     "grunt-cli": "^1.0.0",
     "husky": "^4.0.0",
     "prettier": "^2.0.0",
     "remark-cli": "^8.0.0",
     "remark-preset-wooorm": "^7.0.0",
-    "xo": "^0.30.0"
+    "xo": "^0.32.0"
   },
   "scripts": {
-    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
+    "format": "remark . -qfo && prettier . --write && xo --fix",
     "commit": "commit",
     "test-api": "grunt",
     "test": "npm run format && npm run test-api"
