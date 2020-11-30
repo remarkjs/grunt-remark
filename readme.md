@@ -59,9 +59,9 @@ abide by its terms.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/remarkjs/grunt-remark.svg
+[build-badge]: https://github.com/remarkjs/grunt-remark/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/remarkjs/grunt-remark
+[build]: https://github.com/remarkjs/grunt-remark/actions
 
 [downloads-badge]: https://img.shields.io/npm/dm/grunt-remark.svg
 
