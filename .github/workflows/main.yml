@@ -11,7 +11,7 @@ jobs:
           - windows-latest
           - macos-latest
         node:
-          - lts/dubnium
+          - lts/erbium
           - node
     name: '${{ matrix.platform }}: node.js ${{ matrix.node }}'
     runs-on: ${{ matrix.platform }}
