@@ -21,8 +21,8 @@ module.exports = (grunt) => {
         color: true
       })
 
-      engine(options, function (err, status) {
-        if (err || status) grunt.fail.warn(err || 'Unsuccessful running')
+      engine(options, function (error, status) {
+        if (error || status) grunt.fail.warn(error || 'Unsuccessful running')
         done()
       })
     }
